@@ -1,0 +1,16 @@
+version: '3'
+services:
+  python3:
+    build: ./fastapi
+    container_name: 'fastapi'
+    volumes:
+      - ./fastapi:/root/fastapi
+    ports:
+      - 8000:8000
+  node:
+    build: ./react-farm-stack
+    container_name: 'react'
+    volumes:
+      - ./react-farm-stack:/root/react-farm-stack
+    ports:
+      - 3000:3000
