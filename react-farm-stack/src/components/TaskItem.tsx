@@ -12,7 +12,7 @@ const TaskItemMemo: VFC<
   const { deleteTaskMutation } = useMutateTask()
   return (
     <li>
-      <span className="font=bold cursor-pointer" onClick={() => setId(id)}>
+      <span className="font-bold cursor-pointer" onClick={() => setId(id)}>
         {title}
       </span>
       <div className="flex float-right ml-20">
